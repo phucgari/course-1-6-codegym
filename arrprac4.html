@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="znum">
+<button onclick="add()" >add</button>
+<button onclick="check()" >check</button>
+</body>
+<script>
+  let i=0
+  let arr=[]
+  function add(){
+    let zadd=document.getElementById("znum").value
+    arr.push(zadd)
+    console.log(arr)
+  }
+  function check(){
+    let zadd=document.getElementById("znum").value
+    index=arr.indexOf(zadd)
+    if(index!=-1){
+      arr.splice(index,1)
+      arr.push(0)
+      console.log(arr)
+    }
+  }
+</script>
+</html>
