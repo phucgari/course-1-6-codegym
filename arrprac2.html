@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+<input type="number" id="znum">
+<button onclick="add()" >add</button>
+<button onclick="rev()" >reverse</button>
 
 </body>
+<script>
+    let i=0
+    let arr=[]
+    function add(){
+        let zadd=document.getElementById("znum").value
+        arr.push(zadd)
+        console.log(arr)
+    }
+    function rev(){
+        arr.reverse()
+        console.log(arr)
+    }
+</script>
 </html>
