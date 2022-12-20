@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="znum">
+<button onclick="add()" >add</button>
+</body>
+<script>
+  let arr=[]
+  function add(){
+    let zadd=document.getElementById("znum").value
+    arr.push(+zadd)
+    arr.sort(function(a, b) {
+      return a - b}).reverse()
+    console.log(arr)
+  }
+</script>
+</html>
